@@ -1,10 +1,25 @@
 import { styled } from 'styled-components'
 import { mixins } from '../../styles/mixins'
 
-export const HomeContainer = styled.main`
-  margin: 0 16rem;
-  padding: 40px 0;
+export const HomeContainer = styled.section`
+  position: relative;
+`
+
+export const Content = styled.div`
+  max-width: 1160px;
+  padding: 92px 20px;
+  margin: 0 auto;
+
   display: flex;
+  gap: 56px;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 66px;
+  }
 `
 
 export const Heading = styled.div`
@@ -24,11 +39,9 @@ export const Heading = styled.div`
 `
 
 export const Info = styled.div`
-  max-width: 45rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 20px;
-  margin-top: 4rem;
 
   div {
     display: flex;
@@ -64,7 +77,7 @@ export const CoffeeList = styled.section`
   > div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-row-gap: 40px;
-    grid-column-gap: 32px;
+    grid-row-gap: 2.5rem;
+    grid-column-gap: 2rem;
   }
 `

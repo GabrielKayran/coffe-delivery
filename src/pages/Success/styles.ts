@@ -5,10 +5,9 @@ export const SuccessContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
   padding: 2rem;
   div {
-    margin-right: 2rem;
+    margin-right: 6rem;
   }
   span {
     ${fonts.sizes.textM}
@@ -18,6 +17,8 @@ export const SuccessContainer = styled.section`
 export const SuccessImageContainer = styled.img``
 
 export const SuccessInfo = styled.div`
+  min-width: 32rem;
+  padding: 2rem;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -33,10 +34,19 @@ export const SuccessInfo = styled.div`
   border: 1px solid transparent;
   div {
     padding: 1rem;
+    display: flex;
+    align-items: center;
   }
   svg {
     padding: 8px;
     border-radius: 50%;
     margin-right: 1rem;
+  }
+  span {
+    display: block;
+  }
+  strong {
+    display: block;
+    margin-top: 4px;
   }
 `

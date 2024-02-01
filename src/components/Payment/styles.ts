@@ -30,7 +30,7 @@ export const PaymentBody = styled.div`
   display: flex;
 
   button {
-    border: 1px transparent;
+    border: 1px solid transparent;
     display: flex;
     align-items: center;
     justify-content: center;

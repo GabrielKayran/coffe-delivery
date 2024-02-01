@@ -2,11 +2,9 @@ import { styled } from 'styled-components'
 import { fonts } from '../../styles/fonts'
 
 export const CoffeeCardContainer = styled.div`
-  margin: 20px;
   padding: 2rem;
   border-radius: 6px 36px;
   background-color: ${props => props.theme['gray-200']};
-  height: 400px;
 
   hr {
     margin-bottom: 1rem;
@@ -35,6 +33,10 @@ export const RemoveButton = styled.button`
   border-radius: 8px;
   padding: 0 0.5rem;
 
+  transition: all 0.2s;
+  &:hover {
+    background-color: ${props => props.theme['brown-100']};
+  }
   svg {
     margin-right: 0.2rem;
   }
@@ -55,11 +57,28 @@ export const PurchaseDetails = styled.div`
   display: flex;
   flex-direction: column;
   div {
+    margin-top: 0.75rem;
     display: flex;
+
     justify-content: space-between;
     ${fonts.sizes.textS}
   }
   .total {
     ${fonts.sizes.titleS}
+  }
+`
+
+export const ConfirmButton = styled.button`
+  margin-top: 1.5rem;
+  width: 100%;
+  color: ${props => props.theme.white};
+  padding: 0.7rem 0;
+  background-color: ${props => props.theme['yellow-500']};
+  border-radius: 8px;
+
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: ${props => props.theme['yellow-700']};
   }
 `

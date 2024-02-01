@@ -1,9 +1,10 @@
-import { Coffee, CoffeeButtons, CoffeeCardContainer, CoffeeImage, PurchaseDetails, RemoveButton } from "./styles";
+import { Coffee, CoffeeButtons, CoffeeCardContainer, CoffeeImage, ConfirmButton, PurchaseDetails, RemoveButton } from "./styles";
 import ImageCoffee from '/images/coffees/americano.png'
 import { Trash } from "phosphor-react";
 import { useTheme } from "styled-components";
 import { QuantityInput } from "../QuantityInput";
 import { useState } from "react";
+
 
 
 export function CoffeeCard() {
@@ -31,8 +32,9 @@ export function CoffeeCard() {
         <div>
           <h2>{'Expresso Tradicional'}</h2>
           <CoffeeButtons>
-            <QuantityInput decrementQuantity={decrementQuantity} incrementQuantity={incrementQuantity} quantity={1} />
+            <QuantityInput decrementQuantity={decrementQuantity} incrementQuantity={incrementQuantity} quantity={quantity} />
             <RemoveButton>
+
               <Trash
                 size={16}
                 color={theme["purple-500"]}
@@ -59,6 +61,9 @@ export function CoffeeCard() {
           <span>{'R$ 13,40'}</span>
         </div>
       </PurchaseDetails>
+      <ConfirmButton>
+        CONFIRMAR PEDIDO
+      </ConfirmButton>
     </CoffeeCardContainer>
 
   );

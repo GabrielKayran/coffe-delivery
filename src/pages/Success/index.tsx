@@ -19,8 +19,7 @@ export function Success() {
               color={theme["gray-100"]}
               style={{ backgroundColor: theme["purple-500"] }} />
             <span>
-              Entrega em
-              <strong >Rua João Daniel Martinelli, 102</strong>
+              <strong > Entrega em João Daniel Martinelli, 102</strong>
               Farrapos - Porto Alegre, RS
             </span>
           </div>

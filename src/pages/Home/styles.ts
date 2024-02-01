@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { mixins } from '../../styles/mixins'
+import { fonts } from '../../styles/fonts'
 
 export const HomeContainer = styled.section`
   position: relative;
@@ -28,12 +28,12 @@ export const Heading = styled.div`
   gap: 16px;
 
   h1 {
-    ${mixins.fonts.titleXL}
+    ${fonts.sizes.titleXL}
     color: ${props => props.theme['brown-800']};
   }
 
   span {
-    ${mixins.fonts.textL}
+    ${fonts.sizes.textL}
     color: ${props => props.theme['brown-700']};
   }
 `
@@ -55,7 +55,7 @@ export const Info = styled.div`
   }
 `
 
-export const ImageCoffeContainer = styled.div`
+export const ImageCoffeeContainer = styled.div`
   width: 29rem;
   height: 22.5rem;
 `
@@ -70,7 +70,7 @@ export const CoffeeList = styled.section`
   gap: 54px;
 
   > h2 {
-    ${mixins.fonts.titleL}
+    ${fonts.sizes.titleL}
     color: ${props => props.theme['brown-700']}
   }
 

@@ -1,7 +1,8 @@
 import { HeaderContainer, Location } from "./styles";
-import logoCoffe from "../../assets/logo-coffe.svg";
+import logoCoffee from "../../assets/logo-coffe.svg";
 import { MapPin, ShoppingCart } from 'phosphor-react'
 import { useEffect, useState } from 'react';
+import { NavLink } from "react-router-dom";
 
 
 interface AddressComponents {
@@ -45,20 +46,22 @@ export function Header() {
 
   return (
     <HeaderContainer>
-      <img src={logoCoffe} alt="" />
+      <NavLink to="/">
+        <img src={logoCoffee} alt="" />
+      </NavLink>
       <div>
         <Location>
           <MapPin size={22} weight="fill" />
           {userLocation ? (
             <span>{userLocation}</span>
           ) : (
-            <span>Localização</span>
+            <span>Sem Localização</span>
           )}
         </Location>
         <nav>
-          <a>
+          <NavLink to="/checkout">
             <ShoppingCart size={22} weight="fill" />
-          </a>
+          </NavLink>
         </nav>
       </div>
     </HeaderContainer>

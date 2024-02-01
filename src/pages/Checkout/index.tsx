@@ -1,9 +1,16 @@
+import { CoffeeCard } from "../../components/CoffeeCard";
+import { Form } from "../../components/Form";
+import { Payment } from "../../components/Payment";
 import { CheckoutContainer } from "./styles";
 
 export function Checkout() {
   return (
     <CheckoutContainer>
-      <h1>Checkout</h1>
+      <div>
+        <Form />
+        <Payment />
+      </div>
+      <CoffeeCard />
     </CheckoutContainer>
   );
 }

@@ -1,5 +1,5 @@
 import { Coffee, Package, ShoppingCart, Timer } from "phosphor-react";
-import { CoffeeList, Content, Heading, HomeContainer, ImageCoffeContainer, Info } from "./styles";
+import { CoffeeList, Content, Heading, HomeContainer, ImageCoffeeContainer, Info } from "./styles";
 import { useTheme } from "styled-components";
 import { Card } from "../../components/Card";
 import { coffees } from "../../../data.json"
@@ -55,9 +55,9 @@ export default function Home() {
             </Info>
           </div>
 
-          <ImageCoffeContainer>
+          <ImageCoffeeContainer>
             <img src="src\assets\coffe-image.svg" />
-          </ImageCoffeContainer>
+          </ImageCoffeeContainer>
         </Content>
 
       </HomeContainer>

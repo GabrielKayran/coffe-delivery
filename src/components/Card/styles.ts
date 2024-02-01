@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { mixins } from '../../styles/mixins'
+import { fonts } from '../../styles/fonts'
 
 export const ContainerCard = styled.div`
   background-color: ${props => props.theme['gray-200']};
@@ -35,7 +35,7 @@ export const Tags = styled.div`
     background-color: ${props => props.theme['yellow-300']};
     color: ${props => props.theme['yellow-700']};
     text-transform: uppercase;
-    ${mixins.fonts.tag}
+    ${fonts.sizes.tag}
   }
 `
 
@@ -43,7 +43,7 @@ export const Title = styled.h3`
   margin-top: 16px;
 
   color: ${props => props.theme['brown-700']};
-  ${mixins.fonts.titleS}
+  ${fonts.sizes.titleS}
 `
 
 export const Description = styled.span`
@@ -51,7 +51,7 @@ export const Description = styled.span`
   width: 100%;
 
   color: ${props => props.theme['brown-300']};
-  ${mixins.fonts.textS}
+  ${fonts.sizes.textS}
 `
 
 export const Control = styled.div`
@@ -68,12 +68,12 @@ export const Price = styled.div`
   gap: 2px;
 
   span:first-child {
-    ${mixins.fonts.textS};
+    ${fonts.sizes.textS};
     color: ${props => props.theme['brown-500']};
   }
 
   span:last-child {
-    ${mixins.fonts.titleM};
+    ${fonts.sizes.titleM};
     color: ${props => props.theme['brown-500']};
   }
 `
